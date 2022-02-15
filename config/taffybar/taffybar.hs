@@ -34,7 +34,7 @@ main = do
                        , endWidgets = [ clock, clockIcon, cpu, cpuIcon, mem, memIcon, tray ]
                        , barPosition = Top
                        , barPadding = 10
-                       , barHeight = ScreenRatio $ 1 / 30
+                       , barHeight = ScreenRatio $ 1 / 30 -- Changing this doesn't seem to do anything??
                        , widgetSpacing = 0
                        }
   simpleTaffybar simpleConfig
