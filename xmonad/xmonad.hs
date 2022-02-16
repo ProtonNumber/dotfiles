@@ -37,8 +37,9 @@ myConfig = def
 	`additionalKeysP`
 	[ ("M-S-s", unGrab *> spawn "scrot -s -e 'xclip -selection clipboard -t image/png -i $f && rm $f'")		-- Take a screenshot of an area
 	, ("M-C-s", unGrab *> spawn "scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f'")
-	, ("M-w", kill)					-- Close windows
-	, ("M-r", spawn "dmenu_run")			-- Run dmenu
+	, ("M-w", kill)							-- Close windows
+	, ("M-r", spawn ".config/rofi/launchers/ribbon/launcher.sh")	-- Run launcher
+	, ("M-p", spawn ".config/rofi/powermenu/powermenu.sh")		-- Run power menu
 	]
 
 startup = do
