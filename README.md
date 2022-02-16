@@ -1,4 +1,4 @@
-# A blue minimalist theme for XMonad and taffybar!
+# Config files
 
 Includes icons from font awesome, and adi1090x's [amazing rofi menus](https://github.com/adi1090x/rofi). 
 
